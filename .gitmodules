@@ -1,0 +1,3 @@
+[submodule "Numerics"]
+	path = Numerics
+	url = https://github.com/MattMarti/Numerics.git
