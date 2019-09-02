@@ -1,4 +1,4 @@
-function include_repo(folder_path)
+function include_Hybrid_Motor_Analysis(folder_path)
 % Adds to the MATLAB path all folders in the repo
 % 
 % INPUTS
@@ -6,11 +6,13 @@ function include_repo(folder_path)
 %               Directory path to the repo folder
 % 
 % @author: Matt Marti
-% @date: 2019-04-18
+% @date: 2019-09-02
 
 % If no argument, add folders from here
 if nargin == 0
-    folder_path = '.';
+    m = inmem('-completenames');
+    idum = find(m, 'include_Hybrid_Motor_Analysis');
+    folder_path = m{idum};
 end
 
 % Add '/' to the end of the path name
